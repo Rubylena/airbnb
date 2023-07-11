@@ -1,0 +1,60 @@
+.option-div {
+  border-top: 1px solid var(--grey);
+  padding: 1rem 1.8rem 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  z-index: 1000;
+  background-color: white;
+}
+
+.links-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  opacity: 0.5;
+  padding: 0 0 1rem;
+  border-bottom: 1px solid var(--white);
+  min-width: 85px;
+}
+
+.links-box:hover,
+.selected-box {
+  opacity: 1;
+  padding: 0 0 1rem;
+  border-bottom: 1px solid var(--black);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.links-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}
+
+.links-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--font-grey);
+}
+
+.selected-label {
+  color: var(--black);
+}
+
+@media only screen and (max-width: 800px) {
+  .filter-div {
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+  }
+}
+
+.option-div::-webkit-scrollbar {
+  display: none;
+}
